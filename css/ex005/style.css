@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(121, 55, 55);
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+/* Para Estilizar IDs, usamos  "#" */
+/* Para estilizar Classes, usamos "." */
+
+#titulo-principal {
+    background-color: rgb(201, 203, 204);
+    text-align: center;
+}
+
+/* 
+#modulo-html,#modulo-css,#modulo-js {
+    background-color: rgb(160, 80, 77);
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+*/
+
+.modulo {
+    background-color: rgb(160, 80, 77);
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.basico {
+    color: yellow;
+}
+
+.intermed {
+    color: red;
+}
+
+.avancado {
+    color: green;
+}
+
+.destaque {
+    background-color: rgb(133, 133, 58);
+}

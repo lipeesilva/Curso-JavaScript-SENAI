@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: rgb(93, 147, 184);
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    height: 100px;
+    align-items: center;
+}
+
+nav{
+    background-color: lightseagreen;
+    width: 450px;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+section{
+    background-color: lightskyblue;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card{
+    background-color: aquamarine;
+    width: 100px;
+    height: 100px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

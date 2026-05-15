@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        #noticias{
+            background-color: rgb(109, 115, 177);
+            display: flex;
+            flex-direction: row;
+        }
+
+        p{
+            background-color: rgba(70, 58, 241, 0.829);
+            color: rgb(236, 234, 234);
+            margin: 20px;
+            padding: 10px;
+            width: 200px;
+            height: 200px;
+            font-size: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Precisamos adicionar o display: flex; no container -> pai dos elementos que precisam ser flexíveis -->
+
+    <section id="noticias">
+        <p>a</p>
+        <p>b</p>
+        <p>c</p>
+    </secion>
+    
+
+</body>
+</html>
