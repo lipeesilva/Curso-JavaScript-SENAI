@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        label{
+            display: block;
+        }
+
+        .label-radio{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com formulários</h1>
+    
+    <form method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required>
+
+        <label for="idade">Idade:</label>
+        <input type="number" name="" id="idade" min="5" max="110" required>
+
+        <label for="">Nota1</label>
+        <input type="number" name="notas" id="notas" min="0" max="10" step="0.1">
+
+        <label for="email">Email:</label>
+        <input type="email" name="" id="email" required>
+
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" id="senha" required>
+        <br>
+        <label for="ativo" class="label-radio">Ativo:</label>
+        <input type="radio" name="status" id="ativo">
+
+        <label for="desligado" class="label-radio">Desligado:</label>
+        <input type="radio" name="status" id="desligado">
+
+        <label for="" >Futebol</label>
+        <input type="checkbox" name="" id="">
+
+        <label for="" >Natação</label>
+        <input type="checkbox" name="" id="">
+
+        <label for="" >Boxe</label>
+        <input type="checkbox" name="" id="">
+        
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

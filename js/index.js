@@ -1,3 +1,5 @@
+// INDEX DO EX011 ->
+
 console.log("Executado pelo arquivo index.js")
 
 function somarNumeros (x, y){

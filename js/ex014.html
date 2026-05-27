@@ -28,11 +28,9 @@
             let numero2 = Number(document.getElementById('numero2').value)
 
             let soma = numero1 + numero2
+            
             let paragrafo = document.getElementById("resultado")
-            paragrafo.innerHTML = `O resultado da soma é: ${soma}`
-            // console.log(soma)
-            // console.log(numero1)
-            // console.log(numero2)
+            paragrafo.innerHTML = `O resultado da soma é: <strong>${soma}</strong>`
         }
 
         function mostrarMensagem (){
