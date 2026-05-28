@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+3<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -23,7 +23,7 @@
         
         form{
             background-color: purple;
-            width: 400px;
+            width: 250px;
             border-radius: 10px;
             border: 1px solid black;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0);
@@ -59,30 +59,34 @@
     <form id="form">
         <h1>Login</h1>
         <label for="email">Email:</label>
-        <input type="email" name="email" id="email">
+        <input type="email" name="email" id="email" required>
 
         <label for="senha">Senha:</label>
-        <input type="password" name="senha" id="senha" >
+        <input type="password" name="senha" id="senha" required>
 
-        <button id="enviar" onclick="validarFormulario()">Enviar</button>
+        <button id="enviar">Enviar</button>
     </form>
 
     <script>
 
-        function validarFormulario(){
-            let email = document.getElementById('email').value;
-            let senha = document.getElementById('senha').value;
+        const form = document.getElementById('form')
+        const emailCorreto = 'luiz@gmail.com'
+        const senhaCorreta = '1234'
 
-            if (email === "" || senha === ""){
-                alert("Preencha todos os campos!");
-            }
-            else if (email === "luiz@gmail.com" && senha === "12345"){
-                window.document.href = "page2.html"
+        form.addEventListener('submit', function(event){
+            event.preventDefault()
+
+            const emailUsuario = document.getElementById('email').value
+            const senhaUsuario = document.getElementById('senha').value
+
+            if(emailUsuario == emailCorreto && senhaUsuario == senhaCorreta){
+                window.location.href =  'page2.html'
             }
             else{
-                alert("Email ou Senha incorreta!");
+                alert('Email ou senha incorreta.')
+                form.reset()
             }
-        }
+        })
 
     </script>
 </body>
