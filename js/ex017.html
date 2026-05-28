@@ -3,53 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulário</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
 
     <style>
-        label{
-            display: block;
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
         }
 
-        .label-radio{
-            display: inline;
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+            background-color: rgba(197, 197, 197, 0.747);
+        }
+
+        h1{
+            margin-bottom: 20px;
+            font-size: 30;
+            text-align: center;
+        }
+
+        form{
+            background-color: purple;
+            width: 450px;
+            border-radius: 10px;
+            border: 1px solid black;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0);
+            padding: 15px;
+        }
+
+        label{
+            display: block;
+            margin-bottom: 5px;
+            padding-top: 5px;
+        }
+
+        input{
+            width: 100%;
+            margin-bottom: 5px;
+            padding: 5px;
+            border: none;
+            box-shadow: 2px 1px 5px 0px rgb(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+
+        .radio, .checkbox{
+            width: 10%;
+            box-shadow: none;
+            border: none;
+        }
+
+        button{
+            width: 100%;
+            margin-top: 25px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            padding: 3px;
+            border: none;
+            box-shadow: 2px 1px 5px 0px rgba(80, 6, 218, 0.5);
+        }
+
+        button:hover{
+            background-color: rgb(189, 189, 189);
+        }
+
+        input:focus{
+            outline: none;
+            box-shadow: 2px 1px 5px 0px rgba(0, 0, 0, 0.5);
+            
         }
     </style>
 </head>
 <body>
-    <h1>Trabalhando com formulários</h1>
     
-    <form method="post">
+    <form id="form">
+        <h1>Trabalhando com Formulários</h1>
+
         <label for="nome">Nome:</label>
-        <input type="text" id="nome" required>
+        <input type="text" id="nome" placeholder="João" required>
 
-        <label for="idade">Idade:</label>
-        <input type="number" name="" id="idade" min="5" max="110" required>
+        <label for="idade">Idade: </label>
+        <input type="number" name="idade" id="idade" min="5" max="110"  required>
 
-        <label for="">Nota1</label>
+        <label for="">Notas: </label>
         <input type="number" name="notas" id="notas" min="0" max="10" step="0.1">
 
-        <label for="email">Email:</label>
-        <input type="email" name="" id="email" required>
+        <label for="">Email:</label>
+        <input type="email" name="email" id="email" required>
 
-        <label for="senha">Senha:</label>
-        <input type="password" name="senha" id="senha" required>
-        <br>
-        <label for="ativo" class="label-radio">Ativo:</label>
-        <input type="radio" name="status" id="ativo">
+        <label for="password">Senha: </label>
+        <input type="password" name="" id="password" required>
 
-        <label for="desligado" class="label-radio">Desligado:</label>
-        <input type="radio" name="status" id="desligado">
+        <label for="casado">Estado civil:</label>
+        <input class="radio" type="radio" name="status" id="Casado">Casado(a)
+        <input class="radio" type="radio" name="status" id="solteiro">Solteiro(a)
+        <input class="radio" type="radio" name="status" id="viuvo">Viúvo(a)
 
-        <label for="" >Futebol</label>
-        <input type="checkbox" name="" id="">
+        <label for="" >Atividades:</label>
+        <input class="checkbox" type="checkbox" name="" id="">Bike
+        <input class="checkbox" type="checkbox" name="" id="">Natação
+        <input class="checkbox" type="checkbox" name="" id="">Boxe
 
-        <label for="" >Natação</label>
-        <input type="checkbox" name="" id="">
-
-        <label for="" >Boxe</label>
-        <input type="checkbox" name="" id="">
-        
         <button type="submit">Enviar</button>
     </form>
+
+    <script>
+
+        let form = document.getElementById('form')
+        form.addEventListener('submit', function (event){
+            event.preventDefault() // PARA CANCELAR/ PREVINIR O COMPORTAMENTO PADRÃO (enviar)
+            console.log("O SUBMIT ACONTECEU!!")
+
+            let nomeUsuario = document.getElementById('nome').value
+            alert(`Olá ${nomeUsuario}, formulário enviado!`)
+        })
+
+        let body = document.querySelector('body').value
+        body.addEventListener('keypress', function(event){
+
+            if(event.key == 'f'){
+                window.document.href = 'ex016.html'
+                console.log("A TECLA 'F' FOI PRESSIONADA")
+            }
+
+        })
+    </script>
 </body>
 </html>

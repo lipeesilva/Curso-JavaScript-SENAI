@@ -1,0 +1,21 @@
+        let form = document.getElementById('form')
+        form.addEventListener('submit', function(event){
+            event.preventDefault()
+        })
+
+        let emailUser = document.getElementById('email').value
+        let senhaUser = document.getElementById('senha').value
+        let emailCerto = 'luiz@gmail.com'
+        let senhaCerta = '1234'
+
+        let button = document.getElementById('enviar')
+        body.addEventListener('keypress', function(event){
+
+        })
+
+        if (emailCerto == emailCerto && senhaCerta == senhaCerta){
+            window.location.href = 'page2.html'
+        }
+        else{
+            window.alert("O email está incorreto")
+        }
