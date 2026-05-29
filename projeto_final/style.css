@@ -1,0 +1,50 @@
+/* Topo (Top), Direita (Right), Baixo (Bottom) e Esquerda (Left) */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins';
+}
+
+ul{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    list-style-type: none;
+    gap: 350px;
+}
+
+li{
+    margin-left: 50px;
+}
+
+#pear{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+img{
+    display: block;
+    width: 1500px;
+    height: 500px;
+    margin: 50px 0px 0px 200px;
+}
+
+#promo{
+    text-align: center;
+    padding-top: 25px;
+}
+
+.imgsbloco{
+    width: 200px;
+    height: 200px;
+}
+
+#galeria{
+    display: flex;
+}
