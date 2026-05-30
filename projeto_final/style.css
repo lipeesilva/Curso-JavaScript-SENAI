@@ -32,17 +32,24 @@ ul{
     gap: 30px;
     border: 2px solid #007aff;
     border-radius: 50px;
-    padding: 8px 30px;
-    gap: clamp(10rem, 3vw, 4rem);
+    padding: 8px 10px;
+    gap: clamp(6rem, 3vw, 4rem);
 }
 
 li{
-    margin-left: 50px;
+    margin: 0px 20px;
+    color: white;
+}
+
+.carrinho{
+    width: clamp(30px, 3vw, 40px);
+    height: auto;
 }
 
 li.active{
-    background-color: rgb(40, 40, 209);
     color: white;
+    background-color: rgb(58, 58, 243);
+    color: rgb(0, 0, 0);
     border-radius: 20px;
     padding: 5px 10px;
     font-weight: bold;
@@ -80,6 +87,68 @@ img#banner{
 
 #galeria{
     display: flex;
-    gap: 200px;
+    gap: clamp(100px, 3vw, 40px);
     margin-left: 50px;
+}
+
+#texto-aba{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to bottom, #5ca3f5, #1788bd);
+    color: white;
+    width: 100%;
+    height: 500px;
+    padding: 50px;
+    margin: 150px auto;
+}
+
+#vidro{
+    border: 2px solid #19589c;
+    border-radius: 10px;
+    width: 25%;
+    padding: 0px 5px 0px 14px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+    color: #c9d9eb;
+}
+
+.textos{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 40%;
+}
+
+#texto-outraaba{
+    display: inline-flex;
+    background-color: white;
+    border-radius: 50px;
+    justify-content: space-between;
+    padding: 7px;
+    margin-top: 30px;
+}
+
+#p-branco{
+    color: rgb(54, 54, 54);
+    padding: 7px;
+    font-size: 1.1rem;
+}
+
+#p-azul{
+    background-color: #1f77d6;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+#note{
+    height: auto;
+    width: 70%;
+}
+
+#rodape{
+    background-color: #1f77d6;
+    width: 100%;
+    height: auto;
 }
