@@ -24,7 +24,7 @@ nav{
 
 } */
 
-ul{
+.nav-list{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,7 +36,7 @@ ul{
     gap: clamp(6rem, 3vw, 4rem);
 }
 
-li{
+.nav-list li{
     margin: 0px 20px;
     color: white;
 }
@@ -49,10 +49,13 @@ li{
 li.active{
     color: white;
     background-color: rgb(58, 58, 243);
-    color: rgb(0, 0, 0);
     border-radius: 20px;
     padding: 5px 10px;
     font-weight: bold;
+}
+
+#atual{
+    color: white;
 }
 
 .links{
@@ -76,19 +79,34 @@ img#banner{
 
 #promo{
     text-align: center;
-    padding-top: 25px;
+    padding: 45px;
 }
 
 .imgsbloco{
     width: 100%;
     max-width: 200px;
     height: auto;
+    transition: 0.3s;
+}
+
+.imgsbloco:hover{
+    transform: translateY(-10px);
 }
 
 #galeria{
     display: flex;
     gap: clamp(100px, 3vw, 40px);
     margin-left: 50px;
+}
+
+#galeria-bloco{
+    background: linear-gradient(
+    to left,
+    #b0dde4,
+    #a3dee7);
+    padding: 50px;
+    display: flex;
+    justify-content: center;
 }
 
 #texto-aba{
@@ -147,8 +165,30 @@ img#banner{
     width: 70%;
 }
 
-#rodape{
+footer{
+    display: flex;
+    justify-content: space-beetween;
+    align-items: flex-start;
     background-color: #1f77d6;
+    color: white;
     width: 100%;
     height: auto;
+    padding: 50px;
+    margin-right: 50px;
+}
+
+.footer-lista{
+    list-style: none;
+    padding: 0;
+    flex: 1;
+}
+
+.footer-lista li{
+    color: white;
+    padding: 10px 0;
+}
+
+.coluna{
+    flex: 1;
+    padding: 0px 20px;
 }
